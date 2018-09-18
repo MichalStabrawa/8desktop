@@ -92,6 +92,10 @@ header {
     display: block;
     border-radius: 20px; }
 
+.progress-site {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
 .wrapper {
   max-width: 1160px;
   margin: 0 auto; }
@@ -99,6 +103,102 @@ header {
 .wrapper-item {
   width: 100%;
   display: flex;
-  justify-content: center; }
+  justify-content: space-around;
+  flex-wrap: wrap; }
   .wrapper-item .progress-site-item {
-    width: 500px; }
+    max-width: 228px; }
+    .wrapper-item .progress-site-item .el-progress-circle {
+      width: 223px !important;
+      height: 223px !important;
+      font-size: 50px; }
+    .wrapper-item .progress-site-item .el-progress__text {
+      font-size: 30px !important;
+      font-weight: bold;
+      color: #152b3c; }
+  .wrapper-item .progress-site-item {
+    text-align: center; }
+    .wrapper-item .progress-site-item p {
+      margin-top: 50px; }
+
+.back1 {
+  background: url(../img/images/back1_02.png);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.wrapper-section {
+  width: 1020px;
+  height: 200px;
+  border: 0.5px solid #fff; }
+  .wrapper-section h3 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 0px;
+    margin-top: 60px; }
+  .wrapper-section h3::before, .wrapper-section h3::after {
+    content: '';
+    border: 0.5px solid #fff;
+    display: flex;
+    margin: 5px;
+    flex-grow: 1; }
+  .wrapper-section h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 48px;
+    margin-top: 8px; }
+  .wrapper-section .wrapper-section-item {
+    width: 280px;
+    margin: 0 auto;
+    justify-content: center; }
+
+.portfolio {
+  padding: 50px; }
+  .portfolio .row {
+    max-width: 1080px;
+    margin: 0 auto;
+    max-height: 300px;
+    display: flex;
+    height: auto;
+    flex-wrap: wrap; }
+  .portfolio .row-item {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .portfolio .row-item img {
+      max-width: 100%; }
+  .portfolio .row-item2 {
+    position: relative;
+    width: 50%; }
+    .portfolio .row-item2 .row-item-content {
+      border: 1px solid #000;
+      height: 80%;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-left: 0px;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .portfolio .row-item2 .row-item-content h3 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto; }
+      .portfolio .row-item2 .row-item-content h3::after {
+        content: "SENIOR GRAPHIC DESIGNER";
+        display: block;
+        font-size: 10px;
+        font-weight: lighter;
+        border-bottom: 1px solid red;
+        padding-bottom: 5px; }
