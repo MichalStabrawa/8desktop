@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main{
+    max-width: 1600px;
+    margin:0 auto;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    display:flex;
+
+    .nav-item2{position: relative;
+      width: 25%;
+        background:#000;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        color:#fff;
+    
+
+        button{
+            color:#fff;
+            background:transparent;
+            border:0px;
+            margin-left:30px;
+        }
+        span.nav-item2-span{
+            color:#fff;
+            font-size:26px;
+            margin-left:20px;
+        }
+        .nav-item2-show{
+            display:none;
+            width: 100%;
+            background:#fff;
+            color:#000;
+            position: absolute;
+            z-index:10;
+            bottom: -132%;
+            widows: 100%;
+        }
+    }
+    .nav-item1{
+        width: 75%;
+        height: 100%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left:200px;
+
+        .nav-item1-social{
+            padding-right:15px;
+
+            a{
+                color:#000;
+                margin:15px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+header{
+    background:url(../img/images/8-desktop_02.png);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    color:#fff;
+    display:flex;
+    justify-content: center;
+
+    .header-wrapper{
+        h1,h3{
+            text-align: center;
+        }
+        h3{
+            margin-top:160px;
+            display:flex;
+            align-items: center;
+            font-size:30px;
+            margin-bottom:0px;
+        }
+        h1{
+            font-size:72px;
+            margin-top:20px;
+            margin-bottom: 40px;
+        }
+
+        h3::before,h3::after{
+            content: '';
+            border:0.5px solid #fff;
+            display:flex;
+            background: #fff;
+           
+            margin:5px;
+            flex-grow: 1;
+
+          
+        }
+        .btn-header{
+            width:204px;
+            height:50px;
+            background:transparent;
+            border:1px solid #fff;
+            color:#fff;
+            margin:0 auto;
+            display:block;
+            border-radius:20px;
+        }
+
+    }
+
+    
+}
+
+.wrapper{
+    max-width: 1160px;
+    margin:0 auto;
+}
+
+.wrapper-item{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .progress-site-item{
+       width: 500px;
+    }
+}
