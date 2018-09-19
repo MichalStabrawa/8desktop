@@ -131,6 +131,15 @@ header {
   justify-content: center;
   align-items: center; }
 
+.back2 {
+  background: url(../img/images/tlo2.png);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .wrapper-section {
   width: 1020px;
   height: 200px;
@@ -174,9 +183,14 @@ header {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    overflow: hidden; }
     .portfolio .row-item img {
-      max-width: 100%; }
+      max-width: 100%;
+      transition: 0.5s; }
+      .portfolio .row-item img:hover {
+        transform: scale(1.1);
+        transition: 0.5s; }
     .portfolio .row-item .row-item-content {
       border: 1px solid #fff;
       height: 80%;
@@ -223,3 +237,76 @@ header {
         font-weight: lighter;
         border-bottom: 1px solid red;
         padding-bottom: 5px; }
+  .portfolio .row-item22 {
+    position: relative;
+    width: 50%; }
+    .portfolio .row-item22 .row-item-content {
+      border: 1px solid #000;
+      height: 80%;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-right: 0px;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .portfolio .row-item22 .row-item-content p {
+        text-align: center;
+        font-size: 20px; }
+      .portfolio .row-item22 .row-item-content h3 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
+        font-size: 36px; }
+      .portfolio .row-item22 .row-item-content h3::after {
+        content: "SENIOR GRAPHIC DESIGNER";
+        display: block;
+        font-size: 16px;
+        font-weight: lighter;
+        border-bottom: 1px solid red;
+        padding-bottom: 5px; }
+  .portfolio .row-item11 {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .portfolio .row-item11 img {
+      max-width: 100%; }
+    .portfolio .row-item11 .row-item-content {
+      border: 1px solid #fff;
+      height: 80%;
+      width: 95%;
+      position: absolute;
+      top: 50%;
+      left: 47.5%;
+      border-left: 0px;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
+.portfolio-project .row {
+  display: flex; }
+  .portfolio-project .row figure {
+    position: relative;
+    margin: 0px; }
+    .portfolio-project .row figure .mask {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(184, 184, 184, 0.6); }
+      .portfolio-project .row figure .mask:hover {
+        opacity: 0;
+        transition: 0.2s; }
+  .portfolio-project .row img {
+    width: 100%;
+    height: 100%; }

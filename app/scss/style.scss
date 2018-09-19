@@ -194,6 +194,16 @@ header {
     align-items: center;
 }
 
+.back2{
+    background: url(../img/images/tlo2.png);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .wrapper-section {
     width: 1020px;
     height: 200px;
@@ -248,16 +258,29 @@ header {
         flex-wrap: wrap;
     }
 
+ 
+
+  
+
     .row-item {
         width: 50%;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
 
         img {
             max-width: 100%;
+            transition:0.5s;
+
+            &:hover{
+                transform:scale(1.1);
+                transition: 0.5s;
+            }
         }
+
+        
 
         .row-item-content {
             border: 1px solid #fff;
@@ -267,12 +290,17 @@ header {
             top: 50%;
             left: 53%;
             border-right: 0px;
+          
             transform: translate(-50%, -50%);
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
+        
     }
+    
+   
 
     .row-item2 {
         position: relative;
@@ -318,6 +346,110 @@ header {
                 padding-bottom: 5px;
 
             }
+        }
+        .row-item-content::before{}
+    }
+    .row-item22 {
+        position: relative;
+        width: 50%;
+       
+
+        .row-item-content {
+            border: 1px solid #000;
+            height: 80%;
+            width: 100%;
+         
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-right: 0px;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction:column;
+
+            p{
+                text-align: center;
+                font-size:20px;
+            }
+
+            h3 {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                width: 50%;
+                margin: 0 auto;
+                font-size: 36px
+            }
+
+            h3::after {
+                content: "SENIOR GRAPHIC DESIGNER";
+                display: block;
+                font-size: 16px;
+                font-weight: lighter;
+                border-bottom: 1px solid red;
+                padding-bottom: 5px;
+
+            }
+        }
+    }
+
+    .row-item11 {
+        width: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 100%;
+        }
+
+        .row-item-content {
+            border: 1px solid #fff;
+            height: 80%;
+            width: 95%;
+            position: absolute;
+            top: 50%;
+            left: 47.5%;
+            border-left: 0px;
+          
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+    }
+}
+
+.portfolio-project{
+    .row{
+        display:flex;
+
+        figure{position: relative;
+            margin:0px;
+
+            .mask{
+                position: absolute;
+                z-index: 10;
+                top:0;
+                width: 100%;
+                height: 100%;
+                background: rgba(184, 184, 184, 0.6);
+
+                &:hover{
+                    opacity:0;
+                    transition: 0.2s;
+                }
+            }
+        }
+        img{
+            width: 100%;
+            height: 100%;
         }
     }
 }

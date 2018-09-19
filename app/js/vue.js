@@ -1,3 +1,9 @@
+
+
+
+Vue.use(VueScrollTo)
+
+
 var app = new Vue({
     el: '#app',
     data: {
