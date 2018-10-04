@@ -194,9 +194,12 @@ header {
     justify-content: center;
     align-items: center;
     overflow: hidden; }
+    .portfolio .row-item span {
+      height: 100%; }
     .portfolio .row-item img {
       max-width: 100%;
-      transition: 0.5s; }
+      transition: 0.5s;
+      height: 100%; }
       .portfolio .row-item img:hover {
         transform: scale(1.1);
         transition: 0.5s; }
@@ -285,9 +288,14 @@ header {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    overflow: hidden; }
+    .portfolio .row-item11 span {
+      height: 100%; }
     .portfolio .row-item11 img {
-      max-width: 100%; }
+      max-width: 100%;
+      transition: 0.5s;
+      height: 100%; }
     .portfolio .row-item11 .row-item-content {
       border: 1px solid #fff;
       height: 80%;
@@ -327,6 +335,10 @@ header {
     width: 100%;
     border: 1px solid #f5f5f5;
     height: 100%; }
+  .brands .row span:hover {
+    background: grey;
+    opacity: 0.8;
+    display: block; }
 
 footer {
   background: #101010;
@@ -353,3 +365,7 @@ footer {
         background: green;
         margin-top: 10px;
         width: 150px; }
+
+@media (max-width: 1200px) {
+  .wrapper-section {
+    width: 90%; } }
